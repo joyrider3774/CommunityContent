@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<rom-definition version="1.0">
-    <rom type="cartridge" title="VB2D Tutorial - Lesson 5" version="1.0" />
-    <binary path="obj/lesson5_raycast.vbin" />
-    <textures />
-    <sounds />
-</rom-definition>

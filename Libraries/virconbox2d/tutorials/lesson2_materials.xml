@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<rom-definition version="1.0">
-    <rom type="cartridge" title="VB2D Tutorial - Lesson 2" version="1.0" />
-    <binary path="obj/lesson2_materials.vbin" />
-    <textures />
-    <sounds />
-</rom-definition>

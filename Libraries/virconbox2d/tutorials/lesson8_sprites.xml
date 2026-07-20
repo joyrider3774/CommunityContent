@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<rom-definition version="1.0">
-    <rom type="cartridge" title="VB2D Tutorial - Lesson 8" version="1.0" />
-    <binary path="obj/lesson8_sprites.vbin" />
-    <textures>
-        <texture path="obj/Texture-AngryBirds.vtex" />
-    </textures>
-    <sounds />
-</rom-definition>
