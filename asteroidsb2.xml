@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<rom-definition version="1.0">
+    <rom type="cartridge" title="Asteroids B2" version="1.0" />
+    <binary path="obj/asteroidsb2.vbin" />
+    <textures />
+    <sounds>
+        <sound path="obj/shoot.vsnd" />
+        <sound path="obj/explode.vsnd" />
+        <sound path="obj/shiphit.vsnd" />
+        <sound path="obj/thrust.vsnd" />
+    </sounds>
+</rom-definition>
