@@ -1,0 +1,5367 @@
+  CALL _label1
+  CALL _label144
+  HLT
+
+; ROM address 0x20000005
+_label1:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, 0x00000000
+  MOV [0x00000000], R0
+  MOV R0, 0x00000000
+  MOV [0x00000001], R0
+  MOV R0, 0x3F800000
+  MOV [0x00000002], R0
+  MOV R0, 0x00000000
+  MOV [0x00000003], R0
+  MOV R0, 0x00000000
+  MOV [0x00000004], R0
+  MOV R0, 0x00000000
+  MOV [0x00000005], R0
+  MOV R0, 0x3F800000
+  MOV [0x00000006], R0
+  MOV R0, 0x00000000
+  MOV [0x00000007], R0
+  MOV R0, 0x00000000
+  MOV [0x00000008], R0
+  MOV R0, 0x00000000
+  MOV [0x00000009], R0
+  MOV R0, 0x00000000
+  MOV [0x0000000A], R0
+  MOV R0, 0x00000000
+  MOV [0x0000000B], R0
+  MOV R0, 0x3F800000
+  MOV [0x0000000C], R0
+  MOV R0, 0x00000001
+  MOV [0x0000000D], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+  integer 0x55C00000, 0x4DDE4000, 0x4E1D0000, 0x00000002, 0x60000205, 0x4DFC4000, 0x59C00000, 0x10000000, 0x55C00000, 0x4DDE4000
+  integer 0x5C000205, 0x4DFC4000, 0x59C00000, 0x10000000, 0x55C00000, 0x4DDE4000, 0x4E1D0000, 0x00000002, 0x60000206, 0x4DFC4000
+  integer 0x59C00000, 0x10000000, 0x55C00000, 0x4DDE4000, 0x4E1D0000, 0x00000002, 0x6000020C, 0x4E1D0000, 0x00000003, 0x6000020D
+  integer 0x4E1D0000, 0x00000004, 0x6000020E, 0x4E1D0000, 0x00000005, 0x6000020F, 0x4E1D0000, 0x00000006, 0x60000210, 0x4E1D0000
+  integer 0x00000007, 0x60000211, 0x4DFC4000, 0x59C00000, 0x10000000, 0x55C00000, 0x4DDE4000, 0x54200000, 0x5C000207, 0x4E3D0000
+  integer 0x00000002, 0x4C218000, 0x5C000208, 0x4E3D0000, 0x00000003, 0x4C218000, 0x4DFC4000, 0x59C00000, 0x10000000
+
+; ROM address 0x2000007D
+_label2:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, [BP+2]
+  OUT GPU_ClearColor, R0
+  OUT GPU_Command, GPUCommand_ClearScreen
+  MOV SP, BP
+  POP BP
+  RET
+
+  integer 0x55C00000, 0x4DDE4000, 0x4E1D0000, 0x00000002, 0x60000207, 0x4E1D0000, 0x00000003, 0x60000208, 0x62000200, 0x00000011
+  integer 0x4DFC4000, 0x59C00000, 0x10000000, 0x55C00000, 0x4DDE4000, 0x9FE00000, 0x00000004, 0x0E000000, 0x2000004A, 0x4FC1C000
+  integer 0xFFFFFFFF, 0x4E200000, 0xFFFFFFFF, 0x4DE38000, 0x0E000000, 0x20000042, 0x4E1D0000, 0x00000002, 0x4FC1C000, 0xFFFFFFFE
+  integer 0x4E1D0000, 0x00000004, 0x4C00C000, 0x78000000, 0x1A000000, 0x200000D9, 0x4E3D0000, 0x00000004, 0x4C22C000, 0x4DE38000
+  integer 0x0E000000, 0x20000050, 0x4E3D0000, 0x00000002, 0x4DE38000, 0x4E3D0000, 0x00000003, 0x4FE3C000, 0x00000001, 0x0E000000
+  integer 0x20000087, 0x4E1D0000, 0x00000002, 0x9A000000, 0x0000000A, 0x4FC1C000, 0x00000002, 0x4E1D0000, 0x00000004, 0x4C00C000
+  integer 0x1E000000, 0x0000000A, 0x1A000000, 0x200000D1, 0x4E1D0000, 0xFFFFFFFE, 0x4FC1C000, 0x00000002, 0x4E1D0000, 0x00000003
+  integer 0x9A000000, 0x00000014, 0x4FC1C000, 0x00000003, 0x4E1D0000, 0x00000004, 0x9A000000, 0x00000001, 0x4FC1C000, 0x00000004
+  integer 0x0A000000, 0x200000A5, 0x4E3D0000, 0xFFFFFFFF, 0x4DE38000, 0x0E000000, 0x20000042, 0x4DFC4000, 0x59C00000, 0x10000000
+
+; ROM address 0x200000E1
+_label3:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  MOV R0, [BP+2]
+  MOV R1, [BP+3]
+  IMIN R0, R1
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200000ED
+_label4:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  MOV R0, [BP+2]
+  MOV R1, [BP+3]
+  IMAX R0, R1
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200000F9
+_label5:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, [BP+2]
+  IABS R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000101
+_label6:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  MOV R0, [BP+2]
+  MOV R1, [BP+3]
+  FMIN R0, R1
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000010D
+_label7:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  MOV R0, [BP+2]
+  MOV R1, [BP+3]
+  FMAX R0, R1
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000119
+_label8:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, [BP+2]
+  FABS R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000121
+_label9:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, [BP+2]
+  ROUND R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000129
+_label10:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, [BP+2]
+  SIN R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000131
+_label11:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, [BP+2]
+  FADD R0, 1.570796
+  SIN R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000013B
+_label12:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  MOV R0, [BP+2]
+  MOV R1, [BP+3]
+  ATAN2 R0, R1
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000147
+_label13:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  MOV R0, [BP+2]
+  MOV R1, 0x3F000000
+  POW R0, R1
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000153
+_label14:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  MOV [SP], R1
+  MOV R1, [BP+3]
+  MOV [SP+1], R1
+  CALL _label3
+  IADD SP, 2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000167
+_label15:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  MOV [SP], R1
+  MOV R1, [BP+3]
+  MOV [SP+1], R1
+  CALL _label4
+  IADD SP, 2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000017B
+_label16:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  ISUB SP, 1
+  MOV R1, [BP+2]
+  MOV [SP], R1
+  CALL _label5
+  IADD SP, 1
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000018B
+_label17:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  MOV R0, [BP+2]
+  MOV R1, [BP+3]
+  ILT R0, R1
+  JF R0, _label18
+  MOV R0, [BP+3]
+  JMP _label20
+
+; ROM address 0x20000199
+_label18:
+  MOV R0, [BP+2]
+  MOV R1, [BP+4]
+  IGT R0, R1
+  JF R0, _label19
+  MOV R0, [BP+4]
+  JMP _label20
+
+; ROM address 0x200001A4
+_label19:
+  MOV R0, [BP+2]
+
+; ROM address 0x200001A6
+_label20:
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200001AA
+_label21:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  MOV [SP], R1
+  MOV R1, [BP+3]
+  MOV [SP+1], R1
+  CALL _label6
+  IADD SP, 2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200001BE
+_label22:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  MOV [SP], R1
+  MOV R1, [BP+3]
+  MOV [SP+1], R1
+  CALL _label7
+  IADD SP, 2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200001D2
+_label23:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  ISUB SP, 1
+  MOV R1, [BP+2]
+  MOV [SP], R1
+  CALL _label8
+  IADD SP, 1
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200001E2
+_label24:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  MOV R0, [BP+2]
+  MOV R1, [BP+3]
+  FLT R0, R1
+  JF R0, _label25
+  MOV R0, [BP+3]
+  JMP _label27
+
+; ROM address 0x200001F0
+_label25:
+  MOV R0, [BP+2]
+  MOV R1, [BP+4]
+  FGT R0, R1
+  JF R0, _label26
+  MOV R0, [BP+4]
+  JMP _label27
+
+; ROM address 0x200001FB
+_label26:
+  MOV R0, [BP+2]
+
+; ROM address 0x200001FD
+_label27:
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000201
+_label28:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000021F
+_label29:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  IADD R2, 1
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  FMUL R1, R2
+  FSUB R0, R1
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000023D
+_label30:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+2]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000025B
+_label31:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  PUSH R4
+  ISUB SP, 1
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  MOV R3, [BP+2]
+  MOV R2, [R3]
+  FMUL R1, R2
+  MOV R3, [BP+2]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV R4, [BP+2]
+  IADD R4, 1
+  MOV R3, [R4]
+  FMUL R2, R3
+  FADD R1, R2
+  MOV [SP], R1
+  CALL _label13
+  IADD SP, 1
+  POP R4
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000282
+_label32:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  PUSH R1
+  PUSH R2
+  MOV R1, [BP+3]
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  FSUB R0, R1
+  MOV [BP-1], R0
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  FSUB R0, R1
+  MOV [BP-2], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP-1]
+  FMUL R0, R1
+  MOV R1, [BP-2]
+  MOV R2, [BP-2]
+  FMUL R1, R2
+  FADD R0, R1
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200002AE
+_label33:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  ISUB SP, 1
+  MOV R1, [BP+3]
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  FSUB R0, R1
+  MOV [BP-1], R0
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  FSUB R0, R1
+  MOV [BP-2], R0
+  MOV R1, [BP-1]
+  MOV R2, [BP-1]
+  FMUL R1, R2
+  MOV R2, [BP-2]
+  MOV R3, [BP-2]
+  FMUL R2, R3
+  FADD R1, R2
+  MOV [SP], R1
+  CALL _label13
+  IADD SP, 1
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200002E3
+_label34:
+  PUSH BP
+  MOV BP, SP
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FADD R0, R1
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  IADD R2, 1
+  MOV R1, [R2]
+  FADD R0, R1
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000302
+_label35:
+  PUSH BP
+  MOV BP, SP
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FSUB R0, R1
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  IADD R2, 1
+  MOV R1, [R2]
+  FSUB R0, R1
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000321
+_label36:
+  PUSH BP
+  MOV BP, SP
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  FSGN R0
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  FSGN R0
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000338
+_label37:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, [BP+2]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R0, [BP+2]
+  MOV R2, [BP+3]
+  IADD R2, 1
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000353
+_label38:
+  PUSH BP
+  MOV BP, SP
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R1, [BP+3]
+  MOV R3, [BP+4]
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV R1, [BP+5]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R1, [BP+3]
+  MOV R3, [BP+4]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV R1, [BP+5]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000378
+_label39:
+  PUSH BP
+  MOV BP, SP
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R1, [BP+3]
+  MOV R3, [BP+4]
+  MOV R2, [R3]
+  FMUL R1, R2
+  FSUB R0, R1
+  MOV R1, [BP+5]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R1, [BP+3]
+  MOV R3, [BP+4]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FSUB R0, R1
+  MOV R1, [BP+5]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000039D
+_label40:
+  PUSH BP
+  MOV BP, SP
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  IADD R2, 1
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200003BC
+_label41:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV [BP-2], R0
+  MOV R0, [BP-2]
+  FSGN R0
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200003DC
+_label42:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV [BP-2], R0
+  MOV R0, [BP-2]
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R0, [BP-1]
+  FSGN R0
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200003FC
+_label43:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 3
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  MOV R3, [BP+2]
+  MOV R2, [R3]
+  FMUL R1, R2
+  MOV R3, [BP+2]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV R4, [BP+2]
+  IADD R4, 1
+  MOV R3, [R4]
+  FMUL R2, R3
+  FADD R1, R2
+  MOV [SP], R1
+  CALL _label13
+  MOV [BP-1], R0
+  MOV R0, [BP-1]
+  FLT R0, 0.000000
+  JF R0, _label44
+  MOV R0, 0x00000000
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R0, 0x00000000
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+  JMP _label45
+
+; ROM address 0x2000042C
+_label44:
+  MOV R0, 0x3F800000
+  MOV R1, [BP-1]
+  FDIV R0, R1
+  MOV [BP-2], R0
+  MOV R0, [BP-2]
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R0, [BP-2]
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+
+; ROM address 0x20000449
+_label45:
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000044C
+_label46:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 1
+  MOV R2, [BP+2]
+  MOV [SP], R2
+  CALL _label11
+  MOV R1, R0
+  MOV R2, [BP+3]
+  MOV [R2], R1
+  MOV R0, R1
+  MOV R2, [BP+2]
+  MOV [SP], R2
+  CALL _label10
+  MOV R1, R0
+  MOV R2, [BP+3]
+  IADD R2, 1
+  MOV [R2], R1
+  MOV R0, R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000469
+_label47:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 3
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+2]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  MOV R3, [BP+2]
+  MOV R2, [R3]
+  MOV R4, [BP+2]
+  MOV R3, [R4]
+  FMUL R2, R3
+  FADD R1, R2
+  MOV [SP], R1
+  CALL _label13
+  MOV [BP-1], R0
+  MOV R0, 0x00000000
+  MOV [BP-2], R0
+  MOV R0, [BP-1]
+  FGT R0, 0.000000
+  JF R0, _label48
+  MOV R0, 0x3F800000
+  MOV R1, [BP-1]
+  FDIV R0, R1
+  MOV [BP-2], R0
+
+; ROM address 0x20000496
+_label48:
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R1, [BP-2]
+  FMUL R0, R1
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R1, [BP-2]
+  FMUL R0, R1
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200004AF
+_label49:
+  PUSH BP
+  MOV BP, SP
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  FSGN R0
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200004C5
+_label50:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FSUB R0, R1
+  MOV [BP-2], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV R0, [BP-2]
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000502
+_label51:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  IADD R2, 1
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  FMUL R1, R2
+  FSUB R0, R1
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV [BP-2], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV R0, [BP-2]
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000053F
+_label52:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FSUB R0, R1
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV [BP-2], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R0, [BP-2]
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000057C
+_label53:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  FSGN R0
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV [BP-2], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R0, [BP-2]
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200005BA
+_label54:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 2
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FSUB R0, R1
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  FADD R0, R1
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  IADD R1, 2
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 2
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  FADD R0, R1
+  MOV [BP-2], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R0, [BP-2]
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000609
+_label55:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R1, [BP+3]
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  FSUB R0, R1
+  MOV [BP-1], R0
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  FSUB R0, R1
+  MOV [BP-2], R0
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV R0, [R1]
+  MOV R1, [BP-1]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 2
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R2, [BP-2]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 2
+  IADD R1, 1
+  MOV R0, [R1]
+  FSGN R0
+  MOV R1, [BP-1]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 2
+  MOV R1, [R2]
+  MOV R2, [BP-2]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000655
+_label56:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 5
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV [SP], R1
+  MOV R1, [BP+3]
+  IADD R1, 2
+  MOV [SP+1], R1
+  MOV R1, [BP+4]
+  IADD R1, 2
+  MOV [SP+2], R1
+  CALL _label50
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV [SP], R1
+  MOV R1, [BP+3]
+  MOV [SP+1], R1
+  LEA R1, [BP-2]
+  MOV [SP+2], R1
+  CALL _label52
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  MOV R1, [BP+2]
+  MOV [SP+1], R1
+  MOV R1, [BP+4]
+  MOV [SP+2], R1
+  CALL _label34
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000068B
+_label57:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 5
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV [SP], R1
+  MOV R1, [BP+3]
+  IADD R1, 2
+  MOV [SP+1], R1
+  MOV R1, [BP+4]
+  IADD R1, 2
+  MOV [SP+2], R1
+  CALL _label51
+  MOV R1, [BP+3]
+  MOV [SP], R1
+  MOV R1, [BP+2]
+  MOV [SP+1], R1
+  LEA R1, [BP-2]
+  MOV [SP+2], R1
+  CALL _label35
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV [SP], R1
+  LEA R1, [BP-2]
+  MOV [SP+1], R1
+  MOV R1, [BP+4]
+  MOV [SP+2], R1
+  CALL _label53
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200006C1
+_label58:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, [BP+4]
+  FSGN R0
+  FADD R0, 1.000000
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R1, [BP+4]
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV R1, [BP+5]
+  MOV [R1], R0
+  MOV R0, [BP+4]
+  FSGN R0
+  FADD R0, 1.000000
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R1, [BP+4]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV R1, [BP+5]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200006F2
+_label59:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 1
+  MOV R3, [BP+2]
+  MOV R2, [R3]
+  MOV [SP], R2
+  CALL _label8
+  MOV R1, R0
+  MOV R2, [BP+3]
+  MOV [R2], R1
+  MOV R0, R1
+  MOV R3, [BP+2]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP], R2
+  CALL _label8
+  MOV R1, R0
+  MOV R2, [BP+3]
+  IADD R2, 1
+  MOV [R2], R1
+  MOV R0, R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000713
+_label60:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R3, [BP+2]
+  MOV R2, [R3]
+  MOV [SP], R2
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  MOV [SP+1], R2
+  CALL _label6
+  MOV R1, R0
+  MOV R2, [BP+4]
+  MOV [R2], R1
+  MOV R0, R1
+  MOV R3, [BP+2]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP], R2
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP+1], R2
+  CALL _label6
+  MOV R1, R0
+  MOV R2, [BP+4]
+  IADD R2, 1
+  MOV [R2], R1
+  MOV R0, R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000740
+_label61:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R3, [BP+2]
+  MOV R2, [R3]
+  MOV [SP], R2
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  MOV [SP+1], R2
+  CALL _label7
+  MOV R1, R0
+  MOV R2, [BP+4]
+  MOV [R2], R1
+  MOV R0, R1
+  MOV R3, [BP+2]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP], R2
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP+1], R2
+  CALL _label7
+  MOV R1, R0
+  MOV R2, [BP+4]
+  IADD R2, 1
+  MOV [R2], R1
+  MOV R0, R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000076D
+_label62:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 3
+  MOV R3, [BP+2]
+  MOV R2, [R3]
+  MOV [SP], R2
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  MOV [SP+1], R2
+  MOV R3, [BP+4]
+  MOV R2, [R3]
+  MOV [SP+2], R2
+  CALL _label24
+  MOV R1, R0
+  MOV R2, [BP+5]
+  MOV [R2], R1
+  MOV R0, R1
+  MOV R3, [BP+2]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP], R2
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP+1], R2
+  MOV R3, [BP+4]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP+2], R2
+  CALL _label24
+  MOV R1, R0
+  MOV R2, [BP+5]
+  IADD R2, 1
+  MOV [R2], R1
+  MOV R0, R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200007A6
+_label63:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  MOV R4, [BP+3]
+  MOV R3, [R4]
+  FMUL R2, R3
+  MOV R4, [BP+3]
+  IADD R4, 1
+  MOV R3, [R4]
+  MOV R5, [BP+3]
+  IADD R5, 1
+  MOV R4, [R5]
+  FMUL R3, R4
+  FADD R2, R3
+  MOV [SP], R2
+  CALL _label13
+  MOV R1, R0
+  LEA R2, [BP+2]
+  MOV R2, [R2]
+  MOV [R2], R1
+  MOV R0, R1
+  MOV R0, [BP+2]
+  MOV R0, [R0]
+  FLT R0, 0.000000
+  JF R0, _label64
+  MOV R0, 0x00000000
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R0, 0x00000000
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  JMP _label65
+
+; ROM address 0x200007DB
+_label64:
+  MOV R0, 0x3F800000
+  MOV R1, [BP+2]
+  MOV R1, [R1]
+  FDIV R0, R1
+  MOV [BP-1], R0
+  MOV R0, [BP-1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R0, [BP-1]
+  MOV R2, [BP+3]
+  IADD R2, 1
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+
+; ROM address 0x200007F9
+_label65:
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200007FC
+_label66:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  MOV [SP], R1
+  MOV R1, [BP+3]
+  MOV [SP+1], R1
+  CALL _label12
+  IADD SP, 2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000810
+_label67:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  PUSH R2
+  ISUB SP, 2
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV [SP], R1
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  MOV [SP+1], R1
+  CALL _label66
+  IADD SP, 2
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000082A
+_label68:
+  PUSH BP
+  MOV BP, SP
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000083F
+_label69:
+  PUSH BP
+  MOV BP, SP
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  FSGN R0
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000855
+_label70:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  IADD R2, 1
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  FMUL R1, R2
+  FSUB R0, R1
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV [BP-2], R0
+  MOV R1, [BP-1]
+  MOV [SP], R1
+  MOV R1, [BP-2]
+  MOV [SP+1], R1
+  CALL _label66
+  IADD SP, 2
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000899
+_label71:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  PUSH R1
+  PUSH R2
+  ISUB SP, 1
+  MOV R0, 0x40C90FDA
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  MOV R2, [BP-1]
+  FDIV R1, R2
+  MOV [SP], R1
+  CALL _label9
+  MOV [BP-2], R0
+  MOV R0, [BP+2]
+  MOV R1, [BP-2]
+  MOV R2, [BP-1]
+  FMUL R1, R2
+  FSUB R0, R1
+  IADD SP, 1
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200008BE
+_label72:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 5
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R1, [BP+3]
+  MOV R3, [BP+2]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FSUB R0, R1
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R1, [BP+3]
+  MOV R3, [BP+2]
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV [BP-2], R0
+  MOV R1, [BP-2]
+  MOV R2, [BP-2]
+  FMUL R1, R2
+  MOV R2, [BP-1]
+  MOV R3, [BP-1]
+  FMUL R2, R3
+  FADD R1, R2
+  MOV [SP], R1
+  CALL _label13
+  MOV [BP-3], R0
+  MOV R0, 0x00000000
+  MOV [BP-4], R0
+  MOV R0, [BP-3]
+  FGT R0, 0.000000
+  JF R0, _label73
+  MOV R0, 0x3F800000
+  MOV R1, [BP-3]
+  FDIV R0, R1
+  MOV [BP-4], R0
+
+; ROM address 0x200008FF
+_label73:
+  MOV R0, [BP-1]
+  MOV R1, [BP-4]
+  FMUL R0, R1
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R0, [BP-2]
+  MOV R1, [BP-4]
+  FMUL R0, R1
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000914
+_label74:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 6
+  MOV R0, [BP+4]
+  FSGN R0
+  FADD R0, 1.000000
+  MOV [BP-1], R0
+  MOV R0, [BP-1]
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R1, [BP+4]
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV [BP-2], R0
+  MOV R0, [BP-1]
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R1, [BP+4]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV [BP-3], R0
+  MOV R1, [BP-3]
+  MOV R2, [BP-3]
+  FMUL R1, R2
+  MOV R2, [BP-2]
+  MOV R3, [BP-2]
+  FMUL R2, R3
+  FADD R1, R2
+  MOV [SP], R1
+  CALL _label13
+  MOV [BP-4], R0
+  MOV R0, 0x00000000
+  MOV [BP-5], R0
+  MOV R0, [BP-4]
+  FGT R0, 0.000000
+  JF R0, _label75
+  MOV R0, 0x3F800000
+  MOV R1, [BP-4]
+  FDIV R0, R1
+  MOV [BP-5], R0
+
+; ROM address 0x20000962
+_label75:
+  MOV R0, [BP-2]
+  MOV R1, [BP-5]
+  FMUL R0, R1
+  MOV R1, [BP+5]
+  MOV [R1], R0
+  MOV R0, [BP-3]
+  MOV R1, [BP-5]
+  FMUL R0, R1
+  MOV R1, [BP+5]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000977
+_label76:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 1
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  MOV R3, [BP+2]
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV [BP-1], R0
+  MOV R0, [BP-1]
+  FGT R0, 0.999400
+  JF R0, _label77
+  MOV R1, [BP-1]
+  FLT R1, 1.000600
+  AND R0, R1
+
+; ROM address 0x2000099E
+_label77:
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200009A4
+_label78:
+  PUSH BP
+  MOV BP, SP
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200009B9
+_label79:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 2
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  MOV R1, [R2]
+  FMUL R0, R1
+  MOV R2, [BP+2]
+  IADD R2, 2
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  FADD R0, R1
+  MOV [BP-2], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R0, [BP-2]
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x200009FA
+_label80:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 5
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV R0, [R1]
+  MOV [BP-2], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV [BP-3], R0
+  MOV R1, [BP+2]
+  IADD R1, 2
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV [BP-4], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP-4]
+  FMUL R0, R1
+  MOV R1, [BP-2]
+  MOV R2, [BP-3]
+  FMUL R1, R2
+  FSUB R0, R1
+  MOV [BP-5], R0
+  MOV R0, [BP-5]
+  FNE R0, 0.000000
+  JF R0, _label81
+  MOV R0, 0x3F800000
+  MOV R1, [BP-5]
+  FDIV R0, R1
+  MOV [BP-5], R0
+
+; ROM address 0x20000A34
+_label81:
+  MOV R0, [BP-5]
+  MOV R1, [BP-4]
+  FMUL R0, R1
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R0, [BP-5]
+  FSGN R0
+  MOV R1, [BP-3]
+  FMUL R0, R1
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV R0, [BP-5]
+  FSGN R0
+  MOV R1, [BP-2]
+  FMUL R0, R1
+  MOV R1, [BP+3]
+  IADD R1, 2
+  MOV [R1], R0
+  MOV R0, [BP-5]
+  MOV R1, [BP-1]
+  FMUL R0, R1
+  MOV R1, [BP+3]
+  IADD R1, 2
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000A61
+_label82:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 7
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV R0, [R1]
+  MOV [BP-2], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV [BP-3], R0
+  MOV R1, [BP+2]
+  IADD R1, 2
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV [BP-4], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP-4]
+  FMUL R0, R1
+  MOV R1, [BP-2]
+  MOV R2, [BP-3]
+  FMUL R1, R2
+  FSUB R0, R1
+  MOV [BP-5], R0
+  MOV R0, [BP-5]
+  FNE R0, 0.000000
+  JF R0, _label83
+  MOV R0, 0x3F800000
+  MOV R1, [BP-5]
+  FDIV R0, R1
+  MOV [BP-5], R0
+
+; ROM address 0x20000A9B
+_label83:
+  MOV R0, [BP-5]
+  MOV R1, [BP-4]
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  FMUL R1, R2
+  MOV R2, [BP-2]
+  MOV R4, [BP+3]
+  IADD R4, 1
+  MOV R3, [R4]
+  FMUL R2, R3
+  FSUB R1, R2
+  FMUL R0, R1
+  MOV [BP-6], R0
+  MOV R0, [BP-5]
+  MOV R1, [BP-1]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FMUL R1, R2
+  MOV R2, [BP-3]
+  MOV R4, [BP+3]
+  MOV R3, [R4]
+  FMUL R2, R3
+  FSUB R1, R2
+  FMUL R0, R1
+  MOV [BP-7], R0
+  MOV R0, [BP-6]
+  MOV R1, [BP+4]
+  MOV [R1], R0
+  MOV R0, [BP-7]
+  MOV R1, [BP+4]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000AD2
+_label84:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 1
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  MOV R0, 0x00000001
+  MOV [BP-1], R0
+  MOV R0, [BP-1]
+  JF R0, _label85
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  FLE R1, R2
+  AND R0, R1
+
+; ROM address 0x20000AE9
+_label85:
+  MOV [BP-1], R0
+  MOV R0, [BP-1]
+  JF R0, _label86
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  FLE R1, R2
+  AND R0, R1
+
+; ROM address 0x20000AFB
+_label86:
+  MOV [BP-1], R0
+  MOV R0, [BP-1]
+  JF R0, _label87
+  MOV R2, [BP+3]
+  IADD R2, 2
+  MOV R1, [R2]
+  MOV R3, [BP+2]
+  IADD R3, 2
+  MOV R2, [R3]
+  FLE R1, R2
+  AND R0, R1
+
+; ROM address 0x20000B0D
+_label87:
+  MOV [BP-1], R0
+  MOV R0, [BP-1]
+  JF R0, _label88
+  MOV R2, [BP+3]
+  IADD R2, 2
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R3, [BP+2]
+  IADD R3, 2
+  IADD R3, 1
+  MOV R2, [R3]
+  FLE R1, R2
+  AND R0, R1
+
+; ROM address 0x20000B23
+_label88:
+  MOV [BP-1], R0
+  MOV R0, [BP-1]
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000B2D
+_label89:
+  PUSH BP
+  MOV BP, SP
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  IADD R2, 2
+  MOV R1, [R2]
+  FADD R0, R1
+  FMUL R0, 0.500000
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  IADD R2, 2
+  IADD R2, 1
+  MOV R1, [R2]
+  FADD R0, R1
+  FMUL R0, 0.500000
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000B54
+_label90:
+  PUSH BP
+  MOV BP, SP
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  FSUB R0, R1
+  FMUL R0, 0.500000
+  MOV R1, [BP+3]
+  MOV [R1], R0
+  MOV R1, [BP+2]
+  IADD R1, 2
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  FSUB R0, R1
+  FMUL R0, 0.500000
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000B7B
+_label91:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  MOV R3, [BP+2]
+  MOV R2, [R3]
+  MOV [SP], R2
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  MOV [SP+1], R2
+  CALL _label6
+  MOV R1, R0
+  MOV R2, [BP+4]
+  MOV [R2], R1
+  MOV R0, R1
+  MOV R3, [BP+2]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP], R2
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP+1], R2
+  CALL _label6
+  MOV R1, R0
+  MOV R2, [BP+4]
+  IADD R2, 1
+  MOV [R2], R1
+  MOV R0, R1
+  MOV R3, [BP+2]
+  IADD R3, 2
+  MOV R2, [R3]
+  MOV [SP], R2
+  MOV R3, [BP+3]
+  IADD R3, 2
+  MOV R2, [R3]
+  MOV [SP+1], R2
+  CALL _label7
+  MOV R1, R0
+  MOV R2, [BP+4]
+  IADD R2, 2
+  MOV [R2], R1
+  MOV R0, R1
+  MOV R3, [BP+2]
+  IADD R3, 2
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP], R2
+  MOV R3, [BP+3]
+  IADD R3, 2
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP+1], R2
+  CALL _label7
+  MOV R1, R0
+  MOV R2, [BP+4]
+  IADD R2, 2
+  IADD R2, 1
+  MOV [R2], R1
+  MOV R0, R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000BDA
+_label92:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  PUSH R2
+  MOV R1, [BP+3]
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  IADD R2, 2
+  MOV R1, [R2]
+  FGT R0, R1
+  JF R0, _label93
+  MOV R0, 0x00000000
+  JMP _label97
+
+; ROM address 0x20000BED
+_label93:
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  IADD R2, 2
+  IADD R2, 1
+  MOV R1, [R2]
+  FGT R0, R1
+  JF R0, _label94
+  MOV R0, 0x00000000
+  JMP _label97
+
+; ROM address 0x20000C00
+_label94:
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  IADD R2, 2
+  MOV R1, [R2]
+  FGT R0, R1
+  JF R0, _label95
+  MOV R0, 0x00000000
+  JMP _label97
+
+; ROM address 0x20000C0F
+_label95:
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  IADD R2, 2
+  IADD R2, 1
+  MOV R1, [R2]
+  FGT R0, R1
+  JF R0, _label96
+  MOV R0, 0x00000000
+  JMP _label97
+
+; ROM address 0x20000C22
+_label96:
+  MOV R0, 0x00000001
+
+; ROM address 0x20000C24
+_label97:
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000C29
+_label98:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  ISUB SP, 2
+  MOV R2, [BP+2]
+  MOV [SP], R2
+  MOV R2, [BP+3]
+  MOV [SP+1], R2
+  CALL _label28
+  MOV R1, R0
+  MOV R3, [BP+2]
+  IADD R3, 2
+  MOV R2, [R3]
+  FSUB R1, R2
+  MOV R0, R1
+  IADD SP, 2
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000C49
+_label99:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  MOV R0, [BP+2]
+  FMUL R0, 6.283185
+  MOV [BP-1], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP+6]
+  FMUL R0, R1
+  MOV [BP-2], R0
+  MOV R0, [BP+5]
+  MOV R1, [BP-1]
+  MOV R2, [BP-2]
+  FMUL R1, R2
+  MOV R2, [BP+4]
+  FMUL R1, R2
+  FSUB R0, R1
+  MOV R1, [BP+3]
+  FMUL R1, 2.000000
+  MOV R2, [BP-2]
+  FMUL R1, R2
+  FADD R1, 1.000000
+  MOV R2, [BP-2]
+  MOV R3, [BP-2]
+  FMUL R2, R3
+  FADD R1, R2
+  FDIV R0, R1
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000C7E
+_label100:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 1
+  PUSH R1
+  MOV R0, [BP+2]
+  MOV R1, [BP+2]
+  FNE R0, R1
+  JF R0, _label101
+  MOV R0, 0x00000000
+  JMP _label104
+
+; ROM address 0x20000C8E
+_label101:
+  MOV R0, 0x4E6E6B28
+  MOV [BP-1], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP-1]
+  FMUL R0, R1
+  MOV [BP-1], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP-1]
+  FMUL R0, R1
+  MOV [BP-1], R0
+  MOV R0, [BP+2]
+  MOV R1, [BP-1]
+  FGT R0, R1
+  JF R0, _label102
+  MOV R0, 0x00000000
+  JMP _label104
+
+; ROM address 0x20000CAB
+_label102:
+  MOV R0, [BP+2]
+  MOV R1, [BP-1]
+  FSGN R1
+  FLT R0, R1
+  JF R0, _label103
+  MOV R0, 0x00000000
+  JMP _label104
+
+; ROM address 0x20000CB7
+_label103:
+  MOV R0, 0x00000001
+
+; ROM address 0x20000CB9
+_label104:
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000CBD
+_label105:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  PUSH R4
+  ISUB SP, 1
+  MOV R3, [BP+2]
+  MOV R2, [R3]
+  MOV [SP], R2
+  CALL _label100
+  MOV R1, R0
+  JF R1, _label106
+  MOV R4, [BP+2]
+  IADD R4, 1
+  MOV R3, [R4]
+  MOV [SP], R3
+  CALL _label100
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20000CD8
+_label106:
+  MOV R0, R1
+  IADD SP, 1
+  POP R4
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000CE2
+_label107:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  ISUB SP, 1
+  MOV R3, [BP+2]
+  MOV R2, [R3]
+  MOV [SP], R2
+  CALL _label100
+  MOV R1, R0
+  BNOT R1
+  MOV R0, R1
+  JF R0, _label108
+  MOV R0, 0x00000000
+  JMP _label110
+
+; ROM address 0x20000CF8
+_label108:
+  MOV R3, [BP+2]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV [SP], R2
+  CALL _label100
+  MOV R1, R0
+  BNOT R1
+  MOV R0, R1
+  JF R0, _label109
+  MOV R0, 0x00000000
+  JMP _label110
+
+; ROM address 0x20000D09
+_label109:
+  MOV R1, [BP+2]
+  MOV [SP], R1
+  CALL _label76
+
+; ROM address 0x20000D0E
+_label110:
+  IADD SP, 1
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000D16
+_label111:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, [0x0000000C]
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000D1D
+_label112:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, [BP+2]
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000D24
+_label113:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, [BP+2]
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000D2B
+_label114:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 2
+  PUSH R1
+  PUSH R2
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  FSUB R0, R1
+  MOV [BP-1], R0
+  MOV R1, [BP+2]
+  IADD R1, 2
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  FSUB R0, R1
+  MOV [BP-2], R0
+  MOV R0, [BP-1]
+  MOV R1, [BP-2]
+  FADD R0, R1
+  FMUL R0, 2.000000
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000D57
+_label115:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 1
+  PUSH R1
+  PUSH R2
+  MOV R0, 0x00000000
+  MOV [BP-1], R0
+  MOV R1, [BP+3]
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  FLT R0, R1
+  JF R0, _label116
+  MOV R1, [BP+3]
+  MOV R0, [R1]
+  MOV R1, [BP+2]
+  MOV [R1], R0
+  MOV R0, 0x00000001
+  MOV [BP-1], R0
+
+; ROM address 0x20000D74
+_label116:
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  FLT R0, R1
+  JF R0, _label117
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV R0, 0x00000001
+  MOV [BP-1], R0
+
+; ROM address 0x20000D8F
+_label117:
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  IADD R2, 2
+  MOV R1, [R2]
+  FLT R0, R1
+  JF R0, _label118
+  MOV R1, [BP+3]
+  IADD R1, 2
+  MOV R0, [R1]
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV [R1], R0
+  MOV R0, 0x00000001
+  MOV [BP-1], R0
+
+; ROM address 0x20000DAA
+_label118:
+  MOV R1, [BP+2]
+  IADD R1, 2
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R2, [BP+3]
+  IADD R2, 2
+  IADD R2, 1
+  MOV R1, [R2]
+  FLT R0, R1
+  JF R0, _label119
+  MOV R1, [BP+3]
+  IADD R1, 2
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R1, [BP+2]
+  IADD R1, 2
+  IADD R1, 1
+  MOV [R1], R0
+  MOV R0, 0x00000001
+  MOV [BP-1], R0
+
+; ROM address 0x20000DCD
+_label119:
+  MOV R0, [BP-1]
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000DD4
+_label120:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 1
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  MOV R4, [BP+2]
+  MOV R3, [R4]
+  FADD R2, R3
+  MOV [SP], R2
+  CALL _label112
+  MOV R1, R0
+  MOV R2, [BP+4]
+  MOV [R2], R1
+  MOV R0, R1
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV R4, [BP+2]
+  IADD R4, 1
+  MOV R3, [R4]
+  FADD R2, R3
+  MOV [SP], R2
+  CALL _label112
+  MOV R1, R0
+  MOV R2, [BP+4]
+  IADD R2, 1
+  MOV [R2], R1
+  MOV R0, R1
+  MOV R3, [BP+3]
+  MOV R2, [R3]
+  MOV R4, [BP+2]
+  IADD R4, 2
+  MOV R3, [R4]
+  FADD R2, R3
+  MOV [SP], R2
+  CALL _label113
+  MOV R1, R0
+  MOV R2, [BP+4]
+  IADD R2, 2
+  MOV [R2], R1
+  MOV R0, R1
+  MOV R3, [BP+3]
+  IADD R3, 1
+  MOV R2, [R3]
+  MOV R4, [BP+2]
+  IADD R4, 2
+  IADD R4, 1
+  MOV R3, [R4]
+  FADD R2, R3
+  MOV [SP], R2
+  CALL _label113
+  MOV R1, R0
+  MOV R2, [BP+4]
+  IADD R2, 2
+  IADD R2, 1
+  MOV [R2], R1
+  MOV R0, R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000E2B
+_label121:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 3
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  ISUB SP, 3
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV [SP], R1
+  MOV R1, [BP+2]
+  MOV [SP+1], R1
+  LEA R1, [BP-2]
+  MOV [SP+2], R1
+  CALL _label35
+  MOV R0, [BP-2]
+  FGE R0, 0.000000
+  JF R0, _label122
+  MOV R1, [BP-1]
+  FGE R1, 0.000000
+  AND R0, R1
+
+; ROM address 0x20000E4E
+_label122:
+  MOV [BP-3], R0
+  MOV R1, [BP-3]
+  JF R1, _label123
+  MOV R3, [BP+2]
+  MOV [SP], R3
+  CALL _label105
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20000E5B
+_label123:
+  JF R1, _label124
+  MOV R3, [BP+2]
+  IADD R3, 2
+  MOV [SP], R3
+  CALL _label105
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20000E66
+_label124:
+  MOV [BP-3], R1
+  MOV R0, R1
+  MOV R0, [BP-3]
+  IADD SP, 3
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20000E73
+_label125:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 19
+  MOV R0, 0x00000000
+  MOV R1, [BP+5]
+  MOV [R1], R0
+  MOV R0, 0x00000000
+  MOV R1, [BP+5]
+  IADD R1, 1
+  MOV [R1], R0
+  MOV R0, 0x00000000
+  MOV R1, [BP+5]
+  IADD R1, 2
+  MOV [R1], R0
+  MOV R0, 0x00000000
+  MOV R1, [BP+5]
+  IADD R1, 2
+  IADD R1, 1
+  MOV [R1], R0
+  MOV R0, 0x00000000
+  MOV R1, [BP+5]
+  IADD R1, 4
+  MOV [R1], R0
+  MOV R0, 0x00000000
+  MOV R1, [BP+5]
+  IADD R1, 5
+  MOV [R1], R0
+  MOV R0, 0x00000000
+  MOV R1, [BP+5]
+  IADD R1, 6
+  MOV [R1], R0
+  MOV R0, 0xFB4097CE
+  MOV [BP-1], R0
+  MOV R0, 0x7B4097CE
+  MOV [BP-2], R0
+  MOV R1, [BP+3]
+  MOV R0, [R1]
+  MOV [BP-4], R0
+  MOV R1, [BP+3]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV [BP-3], R0
+  MOV R1, [BP+4]
+  MOV [SP], R1
+  MOV R1, [BP+3]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label35
+  LEA R1, [BP-6]
+  MOV [SP], R1
+  LEA R1, [BP-8]
+  MOV [SP+1], R1
+  CALL _label59
+  MOV R0, 0x00000000
+  MOV [BP-10], R0
+  MOV R0, 0x00000000
+  MOV [BP-9], R0
+  MOV R0, [BP-8]
+  FLT R0, 0.000000
+  JF R0, _label128
+  MOV R0, [BP-4]
+  MOV R2, [BP+2]
+  MOV R1, [R2]
+  FLT R0, R1
+  JT R0, _label126
+  MOV R2, [BP+2]
+  IADD R2, 2
+  MOV R1, [R2]
+  MOV R2, [BP-4]
+  FLT R1, R2
+  OR R0, R1
+
+; ROM address 0x20000EF1
+_label126:
+  JF R0, _label127
+  JMP _label140
+
+; ROM address 0x20000EF5
+_label127:
+  JMP _label131
+
+; ROM address 0x20000EF7
+_label128:
+  MOV R0, 0x3F800000
+  MOV R1, [BP-6]
+  FDIV R0, R1
+  MOV [BP-11], R0
+  MOV R1, [BP+2]
+  MOV R0, [R1]
+  MOV R1, [BP-4]
+  FSUB R0, R1
+  MOV R1, [BP-11]
+  FMUL R0, R1
+  MOV [BP-12], R0
+  MOV R1, [BP+2]
+  IADD R1, 2
+  MOV R0, [R1]
+  MOV R1, [BP-4]
+  FSUB R0, R1
+  MOV R1, [BP-11]
+  FMUL R0, R1
+  MOV [BP-13], R0
+  MOV R0, 0xBF800000
+  MOV [BP-14], R0
+  MOV R0, [BP-12]
+  MOV R1, [BP-13]
+  FGT R0, R1
+  JF R0, _label129
+  MOV R0, [BP-12]
+  MOV [BP-15], R0
+  MOV R0, [BP-13]
+  MOV [BP-12], R0
+  MOV R0, [BP-15]
+  MOV [BP-13], R0
+  MOV R0, 0x3F800000
+  MOV [BP-14], R0
+
+; ROM address 0x20000F31
+_label129:
+  MOV R0, [BP-12]
+  MOV R1, [BP-1]
+  FGT R0, R1
+  JF R0, _label130
+  MOV R0, 0x00000000
+  MOV [BP-9], R0
+  MOV R0, [BP-14]
+  MOV [BP-10], R0
+  MOV R0, [BP-12]
+  MOV [BP-1], R0
+
+; ROM address 0x20000F44
+_label130:
+  MOV R2, [BP-2]
+  MOV [SP], R2
+  MOV R2, [BP-13]
+  MOV [SP+1], R2
+  CALL _label21
+  MOV R1, R0
+  MOV [BP-2], R1
+  MOV R0, R1
+  MOV R0, [BP-1]
+  MOV R1, [BP-2]
+  FGT R0, R1
+  JF R0, _label131
+  JMP _label140
+
+; ROM address 0x20000F5A
+_label131:
+  MOV R0, [BP-7]
+  FLT R0, 0.000000
+  JF R0, _label134
+  MOV R0, [BP-3]
+  MOV R2, [BP+2]
+  IADD R2, 1
+  MOV R1, [R2]
+  FLT R0, R1
+  JT R0, _label132
+  MOV R2, [BP+2]
+  IADD R2, 2
+  IADD R2, 1
+  MOV R1, [R2]
+  MOV R2, [BP-3]
+  FLT R1, R2
+  OR R0, R1
+
+; ROM address 0x20000F75
+_label132:
+  JF R0, _label133
+  JMP _label140
+
+; ROM address 0x20000F79
+_label133:
+  JMP _label137
+
+; ROM address 0x20000F7B
+_label134:
+  MOV R0, 0x3F800000
+  MOV R1, [BP-5]
+  FDIV R0, R1
+  MOV [BP-11], R0
+  MOV R1, [BP+2]
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R1, [BP-3]
+  FSUB R0, R1
+  MOV R1, [BP-11]
+  FMUL R0, R1
+  MOV [BP-12], R0
+  MOV R1, [BP+2]
+  IADD R1, 2
+  IADD R1, 1
+  MOV R0, [R1]
+  MOV R1, [BP-3]
+  FSUB R0, R1
+  MOV R1, [BP-11]
+  FMUL R0, R1
+  MOV [BP-13], R0
+  MOV R0, 0xBF800000
+  MOV [BP-14], R0
+  MOV R0, [BP-12]
+  MOV R1, [BP-13]
+  FGT R0, R1
+  JF R0, _label135
+  MOV R0, [BP-12]
+  MOV [BP-15], R0
+  MOV R0, [BP-13]
+  MOV [BP-12], R0
+  MOV R0, [BP-15]
+  MOV [BP-13], R0
+  MOV R0, 0x3F800000
+  MOV [BP-14], R0
+
+; ROM address 0x20000FB9
+_label135:
+  MOV R0, [BP-12]
+  MOV R1, [BP-1]
+  FGT R0, R1
+  JF R0, _label136
+  MOV R0, 0x00000000
+  MOV [BP-10], R0
+  MOV R0, [BP-14]
+  MOV [BP-9], R0
+  MOV R0, [BP-12]
+  MOV [BP-1], R0
+
+; ROM address 0x20000FCC
+_label136:
+  MOV R2, [BP-2]
+  MOV [SP], R2
+  MOV R2, [BP-13]
+  MOV [SP+1], R2
+  CALL _label21
+  MOV R1, R0
+  MOV [BP-2], R1
+  MOV R0, R1
+  MOV R0, [BP-1]
+  MOV R1, [BP-2]
+  FGT R0, R1
+  JF R0, _label137
+  JMP _label140
+
+; ROM address 0x20000FE2
+_label137:
+  MOV R0, [BP-1]
+  FLT R0, 0.000000
+  JF R0, _label138
+  JMP _label140
+
+; ROM address 0x20000FEA
+_label138:
+  MOV R0, [BP-1]
+  FGT R0, 1.000000
+  JF R0, _label139
+  JMP _label140
+
+; ROM address 0x20000FF2
+_label139:
+  MOV R0, [BP-1]
+  MOV R1, [BP+5]
+  IADD R1, 4
+  MOV [R1], R0
+  MOV DR, [BP+5]
+  LEA SR, [BP-10]
+  MOV CR, 0x00000002
+  MOVS
+  MOV R1, [BP+3]
+  MOV [SP], R1
+  MOV R1, [BP+4]
+  MOV [SP+1], R1
+  MOV R1, [BP-1]
+  MOV [SP+2], R1
+  MOV R1, [BP+5]
+  IADD R1, 2
+  MOV [SP+3], R1
+  CALL _label58
+  MOV R0, 0x00000001
+  MOV R1, [BP+5]
+  IADD R1, 6
+  MOV [R1], R0
+
+; ROM address 0x2000101A
+_label140:
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000101D
+_label141:
+  PUSH BP
+  MOV BP, SP
+  PUSH R1
+  PUSH R2
+  PUSH R3
+  ISUB SP, 1
+  MOV R2, [BP+2]
+  MOV R3, [BP+3]
+  FSUB R2, R3
+  MOV [SP], R2
+  CALL _label8
+  MOV R1, R0
+  FLT R1, 0.001000
+  MOV R0, R1
+  IADD SP, 1
+  POP R3
+  POP R2
+  POP R1
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20001038
+_label142:
+  PUSH BP
+  MOV BP, SP
+  MOV R0, [BP+2]
+  BNOT R0
+  JF R0, _label143
+  MOV R0, 0x00000000
+  MOV [0x0000000D], R0
+
+; ROM address 0x20001043
+_label143:
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x20001046
+_label144:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 56
+  MOV R3, 0x40000000
+  MOV [SP], R3
+  MOV R3, 0x40A00000
+  MOV [SP+1], R3
+  CALL _label21
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x40000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R3, 0x40000000
+  MOV [SP], R3
+  MOV R3, 0x40A00000
+  MOV [SP+1], R3
+  CALL _label22
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x40A00000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R3, 0xC0400000
+  MOV [SP], R3
+  CALL _label23
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x40400000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R3, 0x40E00000
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  MOV R3, 0x40A00000
+  MOV [SP+2], R3
+  CALL _label24
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x40A00000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R3, 0xC0000000
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  MOV R3, 0x40A00000
+  MOV [SP+2], R3
+  CALL _label24
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R3, 0x40400000
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  MOV R3, 0x40A00000
+  MOV [SP+2], R3
+  CALL _label24
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x40400000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, 0x00000002
+  MOV [SP], R2
+  MOV R2, 0x00000005
+  MOV [SP+1], R2
+  CALL _label14
+  MOV R1, R0
+  IEQ R1, 2
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, 0x00000002
+  MOV [SP], R2
+  MOV R2, 0x00000005
+  MOV [SP+1], R2
+  CALL _label15
+  MOV R1, R0
+  IEQ R1, 5
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, 0xFFFFFFFC
+  MOV [SP], R2
+  CALL _label16
+  MOV R1, R0
+  IEQ R1, 4
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, 0x00000009
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  MOV R2, 0x00000005
+  MOV [SP+2], R2
+  CALL _label17
+  MOV R1, R0
+  IEQ R1, 5
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40400000
+  MOV [BP-2], R0
+  MOV R0, 0x40800000
+  MOV [BP-1], R0
+  MOV R0, 0x3F800000
+  MOV [BP-4], R0
+  MOV R0, 0x40000000
+  MOV [BP-3], R0
+  LEA R3, [BP-2]
+  MOV [SP], R3
+  LEA R3, [BP-4]
+  MOV [SP+1], R3
+  CALL _label28
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x41300000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R3, [BP-2]
+  MOV [SP], R3
+  CALL _label30
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x41C80000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R3, [BP-2]
+  MOV [SP], R3
+  CALL _label31
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x40A00000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-2], R0
+  MOV R0, 0x00000000
+  MOV [BP-1], R0
+  MOV R0, 0x00000000
+  MOV [BP-4], R0
+  MOV R0, 0x3F800000
+  MOV [BP-3], R0
+  LEA R3, [BP-2]
+  MOV [SP], R3
+  LEA R3, [BP-4]
+  MOV [SP+1], R3
+  CALL _label29
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x3F800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x00000000
+  MOV [BP-2], R0
+  MOV R0, 0x00000000
+  MOV [BP-1], R0
+  MOV R0, 0x40400000
+  MOV [BP-4], R0
+  MOV R0, 0x40800000
+  MOV [BP-3], R0
+  LEA R3, [BP-2]
+  MOV [SP], R3
+  LEA R3, [BP-4]
+  MOV [SP+1], R3
+  CALL _label32
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x41C80000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R3, [BP-2]
+  MOV [SP], R3
+  LEA R3, [BP-4]
+  MOV [SP+1], R3
+  CALL _label33
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x40A00000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-2], R0
+  MOV R0, 0x40000000
+  MOV [BP-1], R0
+  MOV R0, 0x40400000
+  MOV [BP-4], R0
+  MOV R0, 0x40800000
+  MOV [BP-3], R0
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  LEA R1, [BP-4]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label34
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label145
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x40C00000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001256
+_label145:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40A00000
+  MOV [BP-2], R0
+  MOV R0, 0x40E00000
+  MOV [BP-1], R0
+  MOV R0, 0x3F800000
+  MOV [BP-4], R0
+  MOV R0, 0x40000000
+  MOV [BP-3], R0
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  LEA R1, [BP-4]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label35
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label146
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x40A00000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001291
+_label146:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-2], R0
+  MOV R0, 0xC0000000
+  MOV [BP-1], R0
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  LEA R1, [BP-6]
+  MOV [SP+1], R1
+  CALL _label36
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0xBF800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label147
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x40000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200012C0
+_label147:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40400000
+  MOV [BP-2], R0
+  MOV R0, 0x40800000
+  MOV [BP-1], R0
+  MOV R1, 0x40000000
+  MOV [SP], R1
+  LEA R1, [BP-2]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label37
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40C00000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label148
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x41000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200012F3
+_label148:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-2], R0
+  MOV R0, 0x40000000
+  MOV [BP-1], R0
+  MOV R0, 0x3F800000
+  MOV [BP-4], R0
+  MOV R0, 0x3F800000
+  MOV [BP-3], R0
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  MOV R1, 0x40400000
+  MOV [SP+1], R1
+  LEA R1, [BP-4]
+  MOV [SP+2], R1
+  LEA R1, [BP-6]
+  MOV [SP+3], R1
+  CALL _label38
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label149
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x40A00000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001332
+_label149:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40A00000
+  MOV [BP-2], R0
+  MOV R0, 0x40A00000
+  MOV [BP-1], R0
+  MOV R0, 0x3F800000
+  MOV [BP-4], R0
+  MOV R0, 0x3F800000
+  MOV [BP-3], R0
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  MOV R1, 0x40000000
+  MOV [SP+1], R1
+  LEA R1, [BP-4]
+  MOV [SP+2], R1
+  LEA R1, [BP-6]
+  MOV [SP+3], R1
+  CALL _label39
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40400000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label150
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x40400000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001371
+_label150:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40000000
+  MOV [BP-2], R0
+  MOV R0, 0x40400000
+  MOV [BP-1], R0
+  MOV R0, 0x40800000
+  MOV [BP-4], R0
+  MOV R0, 0x40A00000
+  MOV [BP-3], R0
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  LEA R1, [BP-4]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label40
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x41000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label151
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x41700000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200013AC
+_label151:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-2], R0
+  MOV R0, 0x00000000
+  MOV [BP-1], R0
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  LEA R1, [BP-6]
+  MOV [SP+1], R1
+  CALL _label41
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label152
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x3F800000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200013DB
+_label152:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  LEA R1, [BP-6]
+  MOV [SP+1], R1
+  CALL _label42
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label153
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0xBF800000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001402
+_label153:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40400000
+  MOV [BP-2], R0
+  MOV R0, 0x40800000
+  MOV [BP-1], R0
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  LEA R1, [BP-6]
+  MOV [SP+1], R1
+  CALL _label43
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x3F19999A
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label154
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x3F4CCCCD
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001431
+_label154:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x00000000
+  MOV [BP-8], R0
+  MOV R0, 0x3F800000
+  MOV [BP-7], R0
+  MOV R0, 0x3F800000
+  MOV [BP-2], R0
+  MOV R0, 0x00000000
+  MOV [BP-1], R0
+  LEA R1, [BP-8]
+  MOV [SP], R1
+  LEA R1, [BP-2]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label52
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label155
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x3F800000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x2000146C
+_label155:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x00000000
+  MOV [BP-2], R0
+  MOV R0, 0x3F800000
+  MOV [BP-1], R0
+  LEA R1, [BP-8]
+  MOV [SP], R1
+  LEA R1, [BP-2]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label53
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x3F800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label156
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x2000149F
+_label156:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R1, [BP-8]
+  MOV [SP], R1
+  LEA R1, [BP-8]
+  MOV [SP+1], R1
+  LEA R1, [BP-10]
+  MOV [SP+2], R1
+  CALL _label50
+  MOV R2, [BP-10]
+  MOV [SP], R2
+  MOV R2, 0xBF800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label157
+  MOV R3, [BP-9]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200014CA
+_label157:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R1, [BP-8]
+  MOV [SP], R1
+  LEA R1, [BP-8]
+  MOV [SP+1], R1
+  LEA R1, [BP-10]
+  MOV [SP+2], R1
+  CALL _label51
+  MOV R2, [BP-10]
+  MOV [SP], R2
+  MOV R2, 0x3F800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label158
+  MOV R3, [BP-9]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200014F5
+_label158:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R1, [BP-8]
+  MOV [SP], R1
+  LEA R1, [BP-10]
+  MOV [SP+1], R1
+  CALL _label49
+  MOV R2, [BP-10]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label159
+  MOV R3, [BP-9]
+  MOV [SP], R3
+  MOV R3, 0xBF800000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x2000151C
+_label159:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40400000
+  MOV [BP-10], R0
+  MOV R0, 0x40800000
+  MOV [BP-9], R0
+  LEA R1, [BP-10]
+  MOV [SP], R1
+  LEA R1, [BP-8]
+  MOV [SP+1], R1
+  CALL _label47
+  MOV R2, [BP-8]
+  MOV [SP], R2
+  MOV R2, 0x3F19999A
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label160
+  MOV R3, [BP-7]
+  MOV [SP], R3
+  MOV R3, 0x3F4CCCCD
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x2000154B
+_label160:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R1, 0x00000000
+  MOV [SP], R1
+  LEA R1, [BP-8]
+  MOV [SP+1], R1
+  CALL _label46
+  MOV R2, [BP-8]
+  MOV [SP], R2
+  MOV R2, 0x3F800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label161
+  MOV R3, [BP-7]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001572
+_label161:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R1, 0x3FC90FD8
+  MOV [SP], R1
+  LEA R1, [BP-8]
+  MOV [SP+1], R1
+  CALL _label46
+  MOV R2, [BP-8]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label162
+  MOV R3, [BP-7]
+  MOV [SP], R3
+  MOV R3, 0x3F800000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001599
+_label162:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x41200000
+  MOV [BP-14], R0
+  MOV R0, 0x41A00000
+  MOV [BP-13], R0
+  MOV R0, 0x00000000
+  MOV [BP-12], R0
+  MOV R0, 0x3F800000
+  MOV [BP-11], R0
+  MOV R0, 0x3F800000
+  MOV [BP-2], R0
+  MOV R0, 0x00000000
+  MOV [BP-1], R0
+  LEA R1, [BP-14]
+  MOV [SP], R1
+  LEA R1, [BP-2]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label54
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x41200000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label163
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x41A80000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200015DC
+_label163:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x41200000
+  MOV [BP-2], R0
+  MOV R0, 0x41A80000
+  MOV [BP-1], R0
+  LEA R1, [BP-14]
+  MOV [SP], R1
+  LEA R1, [BP-2]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label55
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x3F800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label164
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x2000160F
+_label164:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x41200000
+  MOV [BP-18], R0
+  MOV R0, 0x41A00000
+  MOV [BP-17], R0
+  MOV R0, 0x00000000
+  MOV [BP-16], R0
+  MOV R0, 0x3F800000
+  MOV [BP-15], R0
+  MOV R0, 0x3F800000
+  MOV [BP-22], R0
+  MOV R0, 0x00000000
+  MOV [BP-21], R0
+  MOV R0, 0x3F800000
+  MOV [BP-20], R0
+  MOV R0, 0x00000000
+  MOV [BP-19], R0
+  LEA R1, [BP-18]
+  MOV [SP], R1
+  LEA R1, [BP-22]
+  MOV [SP+1], R1
+  LEA R1, [BP-26]
+  MOV [SP+2], R1
+  CALL _label56
+  MOV R2, [BP-26]
+  MOV [SP], R2
+  MOV R2, 0x41200000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label165
+  MOV R3, [BP-25]
+  MOV [SP], R3
+  MOV R3, 0x41A80000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x2000165A
+_label165:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, [BP-24]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label166
+  MOV R3, [BP-23]
+  MOV [SP], R3
+  MOV R3, 0x3F800000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001678
+_label166:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x41200000
+  MOV [BP-22], R0
+  MOV R0, 0x41A80000
+  MOV [BP-21], R0
+  MOV R0, 0x00000000
+  MOV [BP-20], R0
+  MOV R0, 0x3F800000
+  MOV [BP-19], R0
+  LEA R1, [BP-18]
+  MOV [SP], R1
+  LEA R1, [BP-22]
+  MOV [SP+1], R1
+  LEA R1, [BP-26]
+  MOV [SP+2], R1
+  CALL _label57
+  MOV R2, [BP-26]
+  MOV [SP], R2
+  MOV R2, 0x3F800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label167
+  MOV R3, [BP-25]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200016B3
+_label167:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, [BP-24]
+  MOV [SP], R2
+  MOV R2, 0x3F800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label168
+  MOV R3, [BP-23]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200016D1
+_label168:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x00000000
+  MOV [BP-2], R0
+  MOV R0, 0x00000000
+  MOV [BP-1], R0
+  MOV R0, 0x41200000
+  MOV [BP-4], R0
+  MOV R0, 0x41A00000
+  MOV [BP-3], R0
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  LEA R1, [BP-4]
+  MOV [SP+1], R1
+  MOV R1, 0x3F000000
+  MOV [SP+2], R1
+  LEA R1, [BP-6]
+  MOV [SP+3], R1
+  CALL _label58
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40A00000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label169
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x41200000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001710
+_label169:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0xC0400000
+  MOV [BP-2], R0
+  MOV R0, 0x40800000
+  MOV [BP-1], R0
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  LEA R1, [BP-6]
+  MOV [SP+1], R1
+  CALL _label59
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40400000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label170
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x40800000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x2000173F
+_label170:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-2], R0
+  MOV R0, 0x40A00000
+  MOV [BP-1], R0
+  MOV R0, 0x40400000
+  MOV [BP-4], R0
+  MOV R0, 0x40000000
+  MOV [BP-3], R0
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  LEA R1, [BP-4]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label60
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x3F800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label171
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x40000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x2000177A
+_label171:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  LEA R1, [BP-4]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label61
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40400000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label172
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x40A00000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200017A5
+_label172:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40E00000
+  MOV [BP-33], R0
+  MOV R0, 0xBF800000
+  MOV [BP-32], R0
+  MOV R0, 0x00000000
+  MOV [BP-29], R0
+  MOV R0, 0x00000000
+  MOV [BP-28], R0
+  MOV R0, 0x40A00000
+  MOV [BP-31], R0
+  MOV R0, 0x40A00000
+  MOV [BP-30], R0
+  LEA R1, [BP-33]
+  MOV [SP], R1
+  LEA R1, [BP-29]
+  MOV [SP+1], R1
+  LEA R1, [BP-31]
+  MOV [SP+2], R1
+  LEA R1, [BP-6]
+  MOV [SP+3], R1
+  CALL _label62
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40A00000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label173
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200017EC
+_label173:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40400000
+  MOV [BP-2], R0
+  MOV R0, 0x40800000
+  MOV [BP-1], R0
+  LEA R1, [BP-27]
+  MOV [SP], R1
+  LEA R1, [BP-2]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label63
+  MOV R2, [BP-27]
+  MOV [SP], R2
+  MOV R2, 0x40A00000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label174
+  MOV R3, [BP-6]
+  MOV [SP], R3
+  MOV R3, 0x3F19999A
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x2000181F
+_label174:
+  JF R1, _label175
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x3F4CCCCD
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x2000182C
+_label175:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R3, 0x3F800000
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label66
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x3FC90FD8
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R3, 0x00000000
+  MOV [SP], R3
+  MOV R3, 0x3F800000
+  MOV [SP+1], R3
+  CALL _label66
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x00000000
+  MOV [BP-8], R0
+  MOV R0, 0x3F800000
+  MOV [BP-7], R0
+  LEA R3, [BP-8]
+  MOV [SP], R3
+  CALL _label67
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x3FC90FD8
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R1, [BP-8]
+  MOV [SP], R1
+  LEA R1, [BP-6]
+  MOV [SP+1], R1
+  CALL _label68
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label176
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x3F800000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200018AE
+_label176:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R1, [BP-8]
+  MOV [SP], R1
+  LEA R1, [BP-6]
+  MOV [SP+1], R1
+  CALL _label69
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0xBF800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label177
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200018D5
+_label177:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-29], R0
+  MOV R0, 0x00000000
+  MOV [BP-28], R0
+  MOV R0, 0x00000000
+  MOV [BP-31], R0
+  MOV R0, 0x3F800000
+  MOV [BP-30], R0
+  LEA R3, [BP-29]
+  MOV [SP], R3
+  LEA R3, [BP-31]
+  MOV [SP+1], R3
+  CALL _label70
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x3FC90FD8
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R3, 0x40FB53D2
+  MOV [SP], R3
+  CALL _label71
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x3FC90FD8
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-8], R0
+  MOV R0, 0x00000000
+  MOV [BP-7], R0
+  LEA R1, [BP-8]
+  MOV [SP], R1
+  MOV R1, 0x00000000
+  MOV [SP+1], R1
+  LEA R1, [BP-10]
+  MOV [SP+2], R1
+  CALL _label72
+  MOV R2, [BP-10]
+  MOV [SP], R2
+  MOV R2, 0x3F800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label178
+  MOV R3, [BP-9]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x2000194E
+_label178:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-29], R0
+  MOV R0, 0x00000000
+  MOV [BP-28], R0
+  MOV R0, 0x00000000
+  MOV [BP-31], R0
+  MOV R0, 0x3F800000
+  MOV [BP-30], R0
+  LEA R1, [BP-29]
+  MOV [SP], R1
+  LEA R1, [BP-31]
+  MOV [SP+1], R1
+  MOV R1, 0x3F000000
+  MOV [SP+2], R1
+  LEA R1, [BP-10]
+  MOV [SP+3], R1
+  CALL _label74
+  MOV R2, [BP-10]
+  MOV [SP], R2
+  MOV R2, 0x3F3504F7
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label179
+  MOV R3, [BP-9]
+  MOV [SP], R3
+  MOV R3, 0x3F3504F7
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x2000198D
+_label179:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x00000000
+  MOV [BP-8], R0
+  MOV R0, 0x3F800000
+  MOV [BP-7], R0
+  LEA R2, [BP-8]
+  MOV [SP], R2
+  CALL _label76
+  MOV R1, R0
+  IEQ R1, 1
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40400000
+  MOV [BP-8], R0
+  MOV R0, 0x40800000
+  MOV [BP-7], R0
+  LEA R2, [BP-8]
+  MOV [SP], R2
+  CALL _label76
+  MOV R1, R0
+  IEQ R1, 0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x00000000
+  MOV [BP-2], R0
+  MOV R0, 0x3F800000
+  MOV [BP-1], R0
+  LEA R1, [BP-2]
+  MOV [SP], R1
+  LEA R1, [BP-10]
+  MOV [SP+1], R1
+  CALL _label78
+  MOV R2, [BP-10]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label180
+  MOV R3, [BP-9]
+  MOV [SP], R3
+  MOV R3, 0x3F800000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x200019EA
+_label180:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40000000
+  MOV [BP-31], R0
+  MOV R0, 0x00000000
+  MOV [BP-30], R0
+  MOV R0, 0x00000000
+  MOV [BP-29], R0
+  MOV R0, 0x40400000
+  MOV [BP-28], R0
+  MOV R0, 0x3F800000
+  MOV [BP-2], R0
+  MOV R0, 0x3F800000
+  MOV [BP-1], R0
+  LEA R1, [BP-31]
+  MOV [SP], R1
+  LEA R1, [BP-2]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label79
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label181
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x40400000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001A2D
+_label181:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40000000
+  MOV [BP-31], R0
+  MOV R0, 0x00000000
+  MOV [BP-30], R0
+  MOV R0, 0x00000000
+  MOV [BP-29], R0
+  MOV R0, 0x40800000
+  MOV [BP-28], R0
+  LEA R1, [BP-31]
+  MOV [SP], R1
+  LEA R1, [BP-35]
+  MOV [SP+1], R1
+  CALL _label80
+  MOV R2, [BP-35]
+  MOV [SP], R2
+  MOV R2, 0x3F000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label182
+  MOV R3, [BP-32]
+  MOV [SP], R3
+  MOV R3, 0x3E800000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001A64
+_label182:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, [BP-34]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label183
+  MOV R3, [BP-33]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001A82
+_label183:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-31], R0
+  MOV R0, 0x00000000
+  MOV [BP-30], R0
+  MOV R0, 0x00000000
+  MOV [BP-29], R0
+  MOV R0, 0x3F800000
+  MOV [BP-28], R0
+  MOV R0, 0x40400000
+  MOV [BP-4], R0
+  MOV R0, 0x40800000
+  MOV [BP-3], R0
+  LEA R1, [BP-31]
+  MOV [SP], R1
+  LEA R1, [BP-4]
+  MOV [SP+1], R1
+  LEA R1, [BP-6]
+  MOV [SP+2], R1
+  CALL _label82
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40400000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label184
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x40800000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001AC5
+_label184:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x00000000
+  MOV [BP-31], R0
+  MOV R0, 0x00000000
+  MOV [BP-30], R0
+  MOV R0, 0x41200000
+  MOV [BP-29], R0
+  MOV R0, 0x41200000
+  MOV [BP-28], R0
+  MOV R0, 0x40000000
+  MOV [BP-35], R0
+  MOV R0, 0x40000000
+  MOV [BP-34], R0
+  MOV R0, 0x40A00000
+  MOV [BP-33], R0
+  MOV R0, 0x40A00000
+  MOV [BP-32], R0
+  LEA R2, [BP-31]
+  MOV [SP], R2
+  LEA R2, [BP-35]
+  MOV [SP+1], R2
+  CALL _label84
+  MOV R1, R0
+  IEQ R1, 1
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R2, [BP-35]
+  MOV [SP], R2
+  LEA R2, [BP-31]
+  MOV [SP+1], R2
+  CALL _label84
+  MOV R1, R0
+  IEQ R1, 0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R1, [BP-31]
+  MOV [SP], R1
+  LEA R1, [BP-6]
+  MOV [SP+1], R1
+  CALL _label89
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40A00000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label185
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x40A00000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001B32
+_label185:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R1, [BP-31]
+  MOV [SP], R1
+  LEA R1, [BP-6]
+  MOV [SP+1], R1
+  CALL _label90
+  MOV R2, [BP-6]
+  MOV [SP], R2
+  MOV R2, 0x40A00000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label186
+  MOV R3, [BP-5]
+  MOV [SP], R3
+  MOV R3, 0x40A00000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001B59
+_label186:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40A00000
+  MOV [BP-39], R0
+  MOV R0, 0x40A00000
+  MOV [BP-38], R0
+  MOV R0, 0x41700000
+  MOV [BP-37], R0
+  MOV R0, 0x41700000
+  MOV [BP-36], R0
+  LEA R1, [BP-31]
+  MOV [SP], R1
+  LEA R1, [BP-39]
+  MOV [SP+1], R1
+  LEA R1, [BP-47]
+  MOV [SP+2], R1
+  CALL _label91
+  MOV R2, [BP-47]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label187
+  MOV R3, [BP-46]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001B94
+_label187:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, [BP-45]
+  MOV [SP], R2
+  MOV R2, 0x41700000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label188
+  MOV R3, [BP-44]
+  MOV [SP], R3
+  MOV R3, 0x41700000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001BB2
+_label188:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R2, [BP-31]
+  MOV [SP], R2
+  LEA R2, [BP-35]
+  MOV [SP+1], R2
+  CALL _label92
+  MOV R1, R0
+  IEQ R1, 1
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x41A00000
+  MOV [BP-43], R0
+  MOV R0, 0x41A00000
+  MOV [BP-42], R0
+  MOV R0, 0x41F00000
+  MOV [BP-41], R0
+  MOV R0, 0x41F00000
+  MOV [BP-40], R0
+  LEA R2, [BP-31]
+  MOV [SP], R2
+  LEA R2, [BP-43]
+  MOV [SP+1], R2
+  CALL _label92
+  MOV R1, R0
+  IEQ R1, 0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-30], R0
+  MOV R0, 0x00000000
+  MOV [BP-29], R0
+  MOV R0, 0x40A00000
+  MOV [BP-28], R0
+  MOV R0, 0x41000000
+  MOV [BP-4], R0
+  MOV R0, 0x40400000
+  MOV [BP-3], R0
+  LEA R3, [BP-30]
+  MOV [SP], R3
+  LEA R3, [BP-4]
+  MOV [SP+1], R3
+  CALL _label98
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x40400000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R3, 0x00000000
+  MOV [SP], R3
+  MOV R3, 0x3F800000
+  MOV [SP+1], R3
+  MOV R3, 0x40A00000
+  MOV [SP+2], R3
+  MOV R3, 0x40E00000
+  MOV [SP+3], R3
+  MOV R3, 0x3C83126F
+  MOV [SP+4], R3
+  CALL _label99
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x40E00000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x00000000
+  MOV [BP-31], R0
+  MOV R0, 0x00000000
+  MOV [BP-30], R0
+  MOV R0, 0x41200000
+  MOV [BP-29], R0
+  MOV R0, 0x41200000
+  MOV [BP-28], R0
+  LEA R3, [BP-31]
+  MOV [SP], R3
+  CALL _label114
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x42200000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x00000000
+  MOV [BP-31], R0
+  MOV R0, 0x00000000
+  MOV [BP-30], R0
+  MOV R0, 0x40A00000
+  MOV [BP-29], R0
+  MOV R0, 0x40A00000
+  MOV [BP-28], R0
+  MOV R0, 0xBF800000
+  MOV [BP-35], R0
+  MOV R0, 0xBF800000
+  MOV [BP-34], R0
+  MOV R0, 0x41000000
+  MOV [BP-33], R0
+  MOV R0, 0x41000000
+  MOV [BP-32], R0
+  LEA R2, [BP-31]
+  MOV [SP], R2
+  LEA R2, [BP-35]
+  MOV [SP+1], R2
+  CALL _label115
+  MOV R1, R0
+  IEQ R1, 1
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, [BP-31]
+  MOV [SP], R2
+  MOV R2, 0xBF800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label189
+  MOV R3, [BP-28]
+  MOV [SP], R3
+  MOV R3, 0x41000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001CBC
+_label189:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  LEA R2, [BP-31]
+  MOV [SP], R2
+  LEA R2, [BP-35]
+  MOV [SP+1], R2
+  CALL _label115
+  MOV R1, R0
+  IEQ R1, 0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-31], R0
+  MOV R0, 0x3F800000
+  MOV [BP-30], R0
+  MOV R0, 0x40000000
+  MOV [BP-29], R0
+  MOV R0, 0x40000000
+  MOV [BP-28], R0
+  MOV R0, 0x41200000
+  MOV [BP-4], R0
+  MOV R0, 0x41A00000
+  MOV [BP-3], R0
+  LEA R1, [BP-31]
+  MOV [SP], R1
+  LEA R1, [BP-4]
+  MOV [SP+1], R1
+  LEA R1, [BP-39]
+  MOV [SP+2], R1
+  CALL _label120
+  MOV R2, [BP-39]
+  MOV [SP], R2
+  MOV R2, 0x41300000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label190
+  MOV R3, [BP-38]
+  MOV [SP], R3
+  MOV R3, 0x41A80000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001D12
+_label190:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, [BP-37]
+  MOV [SP], R2
+  MOV R2, 0x41400000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label191
+  MOV R3, [BP-36]
+  MOV [SP], R3
+  MOV R3, 0x41B00000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001D30
+_label191:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x00000000
+  MOV [BP-31], R0
+  MOV R0, 0x00000000
+  MOV [BP-30], R0
+  MOV R0, 0x41200000
+  MOV [BP-29], R0
+  MOV R0, 0x41200000
+  MOV [BP-28], R0
+  LEA R2, [BP-31]
+  MOV [SP], R2
+  CALL _label121
+  MOV R1, R0
+  IEQ R1, 1
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x41200000
+  MOV [BP-35], R0
+  MOV R0, 0x41200000
+  MOV [BP-34], R0
+  MOV R0, 0x00000000
+  MOV [BP-33], R0
+  MOV R0, 0x00000000
+  MOV [BP-32], R0
+  LEA R2, [BP-35]
+  MOV [SP], R2
+  CALL _label121
+  MOV R1, R0
+  IEQ R1, 0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0xC0A00000
+  MOV [BP-48], R0
+  MOV R0, 0x40A00000
+  MOV [BP-47], R0
+  MOV R0, 0x40A00000
+  MOV [BP-50], R0
+  MOV R0, 0x40A00000
+  MOV [BP-49], R0
+  LEA R1, [BP-31]
+  MOV [SP], R1
+  LEA R1, [BP-48]
+  MOV [SP+1], R1
+  LEA R1, [BP-50]
+  MOV [SP+2], R1
+  LEA R1, [BP-46]
+  MOV [SP+3], R1
+  CALL _label125
+  MOV R1, [BP-40]
+  IEQ R1, 1
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, [BP-42]
+  MOV [SP], R2
+  MOV R2, 0x3F000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, [BP-44]
+  MOV [SP], R2
+  MOV R2, 0x00000000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label192
+  MOV R3, [BP-43]
+  MOV [SP], R3
+  MOV R3, 0x40A00000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001DC5
+_label192:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, [BP-46]
+  MOV [SP], R2
+  MOV R2, 0xBF800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  JF R1, _label193
+  MOV R3, [BP-45]
+  MOV [SP], R3
+  MOV R3, 0x00000000
+  MOV [SP+1], R3
+  CALL _label141
+  MOV R2, R0
+  AND R1, R2
+
+; ROM address 0x20001DE3
+_label193:
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0xC0A00000
+  MOV [BP-48], R0
+  MOV R0, 0x41A00000
+  MOV [BP-47], R0
+  MOV R0, 0x40A00000
+  MOV [BP-50], R0
+  MOV R0, 0x41A00000
+  MOV [BP-49], R0
+  LEA R1, [BP-31]
+  MOV [SP], R1
+  LEA R1, [BP-48]
+  MOV [SP+1], R1
+  LEA R1, [BP-50]
+  MOV [SP+2], R1
+  LEA R1, [BP-46]
+  MOV [SP+3], R1
+  CALL _label125
+  MOV R1, [BP-40]
+  IEQ R1, 0
+  MOV [SP], R1
+  CALL _label142
+  MOV R1, 0x00000001
+  MOV [SP], R1
+  CALL _label142
+  CALL _label111
+  MOV R2, R0
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x3F800000
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  CALL _label111
+  MOV R2, R0
+  FMUL R2, 0.005000
+  MOV [BP-51], R2
+  MOV R2, [BP-51]
+  MOV [SP], R2
+  MOV R2, 0x3BA3D70A
+  MOV [SP+1], R2
+  CALL _label141
+  MOV R1, R0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R2, 0x40A00000
+  MOV [SP], R2
+  CALL _label100
+  MOV R1, R0
+  IEQ R1, 1
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x3F800000
+  MOV [BP-2], R0
+  MOV R0, 0x40000000
+  MOV [BP-1], R0
+  LEA R2, [BP-2]
+  MOV [SP], R2
+  CALL _label105
+  MOV R1, R0
+  IEQ R1, 1
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x00000000
+  MOV [BP-8], R0
+  MOV R0, 0x3F800000
+  MOV [BP-7], R0
+  LEA R2, [BP-8]
+  MOV [SP], R2
+  CALL _label107
+  MOV R1, R0
+  IEQ R1, 1
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, 0x40400000
+  MOV [BP-8], R0
+  MOV R0, 0x40800000
+  MOV [BP-7], R0
+  LEA R2, [BP-8]
+  MOV [SP], R2
+  CALL _label107
+  MOV R1, R0
+  IEQ R1, 0
+  MOV [BP-51], R1
+  MOV R1, [BP-51]
+  MOV [SP], R1
+  CALL _label142
+  MOV R0, [0x0000000D]
+  JF R0, _label194
+  MOV R1, 0xFF00FF00
+  MOV [SP], R1
+  CALL _label2
+  JMP _label195
+
+; ROM address 0x20001EA4
+_label194:
+  MOV R1, 0xFF0000FF
+  MOV [SP], R1
+  CALL _label2
+
+; ROM address 0x20001EA9
+_label195:
+  MOV SP, BP
+  POP BP
+  RET

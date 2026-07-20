@@ -1,0 +1,22 @@
+  CALL _label1
+  CALL _label2
+  HLT
+
+; ROM address 0x20000005
+_label1:
+  PUSH BP
+  MOV BP, SP
+  MOV SP, BP
+  POP BP
+  RET
+
+; ROM address 0x2000000A
+_label2:
+  PUSH BP
+  MOV BP, SP
+  ISUB SP, 1
+  MOV R0, 0x00000000
+  MOV [BP-1], R0
+  MOV SP, BP
+  POP BP
+  RET
