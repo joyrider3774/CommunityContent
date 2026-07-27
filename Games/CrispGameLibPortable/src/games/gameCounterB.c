@@ -38,7 +38,10 @@ struct CounterbCounter {
     bool hasPos;
 };
 
-#define COUNTER_B_MAX_ENEMY_COUNT 64
+// Spawn interval scales as ~35/difficulty ticks but travel speed (and thus
+// screen-crossing lifetime) only as ~sqrt(difficulty) -> concurrent count
+// grows unbounded with sqrt(difficulty); 256 gives a much longer safety margin.
+#define COUNTER_B_MAX_ENEMY_COUNT 256
 CounterbEnemy[COUNTER_B_MAX_ENEMY_COUNT] counterbEnemies;
 int counterbEnemyIndex;
 float counterbNextEnemyTicks;
