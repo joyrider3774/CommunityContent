@@ -2,6 +2,12 @@
 A port of 266 games from [crisp-game-lib](https://github.com/abagames/crisp-game-lib)
 to the [Vircon32](https://www.vircon32.com/) fantasy console.
 
+![Gameplay](screenshots/menu.png "Menu screen")
+
+![Gameplay](screenshots/gameplay-kite.png "Game: Kite")
+
+![Gameplay](screenshots/gameplay-ladderdrop.png "Game: Ladder Drop")
+
 ## Credits and lineage
 
 - **[crisp-game-lib](https://github.com/abagames/crisp-game-lib)** by
