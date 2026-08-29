@@ -21,7 +21,7 @@ if "%SKIP_V32OPT%"=="1" (
 ) else (
     where v32opt >nul 2>nul
     if %errorlevel% equ 0 (
-        v32opt obj\main.asm obj\main_opt.asm -v -O3 && set ASM_TO_ASSEMBLE=obj\main_opt.asm
+        v32opt obj\main.asm -o obj\main_opt.asm -v -O3 && set ASM_TO_ASSEMBLE=obj\main_opt.asm
     ) else (
         echo v32opt not found on PATH - skipping, using unoptimized assembly
     )
